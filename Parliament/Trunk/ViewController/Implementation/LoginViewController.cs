@@ -23,7 +23,10 @@ namespace Parliament.Implementation.ViewController
 
         public async Task Login()
         {
-            
+            await _Reposetory.Login(InputObject, (LoginViewModel obj) => 
+            { 
+                //ShowMessage(_ResponseContent); 
+            });
         }
     }
 }

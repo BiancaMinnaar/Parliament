@@ -5,6 +5,6 @@ namespace Parliament.Implementation.ViewModel
 {
     public class LoginViewModel : ProjectBaseViewModel
     {
-        
+        public string Password { get; set; }
     }
 }

@@ -17,11 +17,11 @@ namespace Parliament.Implementation.Service
 
         public async Task<T> Login(LoginViewModel model)
         {
-            string requestURL = "/path/{Parameter}";
+            string requestURL = "/Login";
             var httpMethod = BaseNetworkAccessEnum.Get;
             var parameters = new Dictionary<string, ParameterTypedValue>()
             {
-                //{"Parameter", model.Property},
+                {"Password", new ParameterTypedValue(model.Password)},
             };
             return await _NetworkInterface(requestURL, parameters, null, httpMethod);
         }

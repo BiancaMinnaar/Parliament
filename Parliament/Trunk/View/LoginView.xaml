@@ -13,6 +13,20 @@
     BackgroundColor="#565E60"
     Title="Login">
     <ContentPage.Content>
-        
+        <Grid HorizontalOptions="Center" VerticalOptions="Center">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="30" />
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="100" />
+          </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Grid.Row="0" Text="User Name:" />
+            <Label Grid.Column="0" Grid.Row="1" Text="Password:"/>
+            <Entry Grid.Column="1" Grid.Row="1" Text="{Binding Password}"/>
+            <Button Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Text="Login" Clicked="On_Login_Event" />
+        </Grid>
     </ContentPage.Content>
 </base:ProjectBaseContentPage>
