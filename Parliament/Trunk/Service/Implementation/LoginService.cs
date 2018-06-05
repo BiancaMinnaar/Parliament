@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Threading.Tasks;
 using CorePCL;
 using Parliament.Implementation.ViewModel;
@@ -17,11 +18,11 @@ namespace Parliament.Implementation.Service
 
         public async Task<T> Login(LoginViewModel model)
         {
-            string requestURL = "/Login";
-            var httpMethod = BaseNetworkAccessEnum.Get;
+            string requestURL = "/login";
+            var httpMethod = BaseNetworkAccessEnum.Post;
             var parameters = new Dictionary<string, ParameterTypedValue>()
             {
-                {"Password", new ParameterTypedValue(model.Password)},
+                {"password", new ParameterTypedValue(WebUtility.UrlEncode(model.Password))},
             };
             return await _NetworkInterface(requestURL, parameters, null, httpMethod);
         }
