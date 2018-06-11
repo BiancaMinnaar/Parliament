@@ -6,7 +6,7 @@ using Xamarin.Forms;
 
 namespace Parliament.Implementation.View
 {
-    public partial class HomeDetailView : ProjectBaseContentPage<HomeDetailViewController, HomeDetailViewModel>
+    public partial class HomeDetailView : ProjectBaseContentView<HomeDetailViewController, HomeDetailViewModel>
     {
         public HomeDetailView()
         {
