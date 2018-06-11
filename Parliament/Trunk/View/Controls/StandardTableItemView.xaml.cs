@@ -8,10 +8,11 @@ namespace Parliament.Implementation.View
 {
     public partial class StandardTableItemView : ProjectBaseContentView<StandardTableItemViewController, StandardTableItemViewModel>
     {
-        public StandardTableItemView()
+        public StandardTableItemView(Xamarin.Forms.View viewToShow)
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
+            Detail.Content = viewToShow;
             BindingContext = _ViewController.InputObject;
         }
 

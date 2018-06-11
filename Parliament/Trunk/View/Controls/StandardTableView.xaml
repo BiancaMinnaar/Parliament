@@ -10,13 +10,6 @@
     xmlns:image="clr-namespace:MobileBonsai.View"
     x:Class="Parliament.Implementation.View.StandardTableView" 
     x:TypeArguments="p:StandardTableViewController, m:StandardTableViewModel" 
-    Title="Login">
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <image:ByteArrayToImageSourceConverter x:Key="ByteArrayToImage" />
-        </ResourceDictionary>
-    </ContentPage.Resources>
-    <ContentPage.Content>
-        
-    </ContentPage.Content>
+    >
+    <StackLayout x:Name="Table" Orientation="Vertical" />
 </base:ProjectBaseContentView>
