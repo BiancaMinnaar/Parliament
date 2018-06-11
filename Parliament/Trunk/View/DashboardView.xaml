@@ -24,7 +24,7 @@
                 <Label Text="Public User" />
                 <!--UserPicture-->
             </StackLayout>
-            <StackLayout x:Name="DetailView"></StackLayout>
+            <b:StandardTableView x:Name="Detail"></b:StandardTableView>
         </StackLayout>
     </ContentPage.Content>
 </base:ProjectBaseContentPage>
