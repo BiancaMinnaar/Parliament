@@ -10,7 +10,6 @@
     xmlns:image="clr-namespace:MobileBonsai.View"
     x:Class="Parliament.Implementation.View.DashboardView" 
     x:TypeArguments="p:DashboardViewController, m:DashboardViewModel" 
-    BackgroundColor="#565E60"
     Title="Login">
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -18,6 +17,14 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        
+        <StackLayout Orientation="Vertical">
+            <StackLayout HeightRequest="30" />
+            <StackLayout Orientation="Horizontal">
+                <!--Picture-->
+                <Label Text="Public User" />
+                <!--UserPicture-->
+            </StackLayout>
+            <StackLayout x:Name="DetailView"></StackLayout>
+        </StackLayout>
     </ContentPage.Content>
 </base:ProjectBaseContentPage>
