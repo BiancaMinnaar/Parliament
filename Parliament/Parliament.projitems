@@ -22,6 +22,14 @@
       <SubType>Designer</SubType>
       <Generator>Generator</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Trunk\View\Controls\StandardTableItemView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>Generator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Trunk\View\Controls\StandardTableView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>Generator</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Root\CheckAndBalance.cs" />
@@ -71,6 +79,26 @@
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\Implementation\HomeDetailRepository.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\IHomeDetailService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\Implementation\HomeDetailService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\StandardTableItemViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewController\IStandardTableItemViewController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewController\Implementation\StandardTableItemViewController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\IStandardTableItemRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\Implementation\StandardTableItemRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\IStandardTableItemService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\Implementation\StandardTableItemService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\StandardTableViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewController\IStandardTableViewController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewController\Implementation\StandardTableViewController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\IStandardTableRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\Implementation\StandardTableRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\IStandardTableService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\Implementation\StandardTableService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\View\Controls\StandardTableItemView.xaml.cs">
+      <DependentUpon>StandardTableItemView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\View\Controls\StandardTableView.xaml.cs">
+      <DependentUpon>StandardTableView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Root\" />
@@ -83,5 +111,6 @@
     <Folder Include="$(MSBuildThisFileDirectory)Trunk\ViewController\Implementation\" />
     <Folder Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\" />
     <Folder Include="$(MSBuildThisFileDirectory)Trunk\View\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Trunk\View\Controls\" />
   </ItemGroup>
 </Project>
