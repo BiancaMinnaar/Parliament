@@ -18,6 +18,10 @@
       <SubType>Designer</SubType>
       <Generator>Generator</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Trunk\View\HomeDetailView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>Generator</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Root\CheckAndBalance.cs" />
@@ -57,6 +61,16 @@
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\Implementation\DashboardRepository.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\IDashboardService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\Implementation\DashboardService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\HomeDetailViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\View\HomeDetailView.xaml.cs">
+      <DependentUpon>HomeDetailView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewController\IHomeDetailViewController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewController\Implementation\HomeDetailViewController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\IHomeDetailRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\Implementation\HomeDetailRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\IHomeDetailService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\Implementation\HomeDetailService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Root\" />
